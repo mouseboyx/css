@@ -11,6 +11,7 @@
 @import url('reset.css');
 @import url('fonts.css');
 /* basic elements */
+
 html {
 	margin: 0;
 	padding: 0;
@@ -39,6 +40,14 @@ header {
 	background: url(../img/zen-intro.gif) no-repeat;
 	padding: 0;
 	}
+zen-intro#after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+}
 
 h1, h2 {
 	margin: 0;
@@ -117,9 +126,11 @@ div#zen-preamble.preamble {
 */
 .summary p,  
 div#zen-explanation.explanation {
-	margin-top: 10vw;
+clear:both;
+	/*margin-top: 10vw;
 	padding-top: 10vw;
 	position: relative;
+*/
     font-family: 'deutsch_gothicnormal', 'Droid Serif', serif;
     font-size: 1.25em;
 	text-align: center;
@@ -169,6 +180,7 @@ footer a:link, footer a:visited {
 /* ----------------------------- sidebar ----------------------------- */
 
 .sidebar {
+	float:left;
 	position: relative;
 	margin-left: 5vw;
 	margin-top: 25vh;
@@ -230,7 +242,7 @@ footer a:link, footer a:visited {
 	white-space: nowrap;
 	overflow: hidden;
 	}
-*/
+
 .extra1 {
 	background: transparent url() top left no-repeat; 
 	position: absolute; 
@@ -265,4 +277,5 @@ footer {
 .sidebar li a:visited {
 	color: #4d4d4d;
 	}
+
 
